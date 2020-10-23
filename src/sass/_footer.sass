@@ -18,7 +18,7 @@
             font-size: 15px
             font-weight: 300
             border-bottom: 1px solid #888888
-            line-height: 1.1
+            line-height: 0.9
             &:hover
                 text-decoration: none
     &__call-us
@@ -27,3 +27,15 @@
         color: #888888
         font-size: 15px
         font-weight: 300
+
+@media ( max-width: 394px)
+    .footer
+        &__splitter
+            display: none
+        &_links
+            flex-direction: column
+            a
+                font-size: 17px
+                margin: 7px auto
+                padding: 3px 0
+    

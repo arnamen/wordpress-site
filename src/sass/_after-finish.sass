@@ -1,6 +1,6 @@
 .after-finish
     padding: 86px 0 79px 0
-    background: url(/src/img/after-finish/bg.png) center center/cover no-repeat
+    background: url(/../img/after-finish/bg.png) center center/cover no-repeat
     min-height: 447px
     &__title
         color: #efefef
@@ -19,6 +19,7 @@
         font-size: 17px
         font-weight: 300
         text-align: center
+        max-width: 193px
     &__icon
         width: 115px
         height: 115px
@@ -28,3 +29,12 @@
         display: flex
         justify-content: center
         align-items: center
+
+@media ( max-width: 990px)
+    .after-finish
+        &_wrapper
+            flex-wrap: wrap
+            justify-content: space-evenly
+        &__descr
+            margin: 0 auto
+    
